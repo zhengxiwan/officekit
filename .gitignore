@@ -1,0 +1,10 @@
+.idea
+.cargo-husky
+target
+log
+.cargo
+.DS_Store
+temp
+.temp
+**/Cargo.lock
+.vscode

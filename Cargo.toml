@@ -1,0 +1,28 @@
+[package]
+name = "officekit"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+quick-xml = { version = "0.27", registry = "shimo" }
+
+skia-safe = { version = "0.63.0", features = ["all-macos"] }
+
+# gl-window
+[target.'cfg(all(not(target_os = "android"), not(target_os = "emscripten"), not(target_os = "ios")))'.dev-dependencies]
+glutin = "0.30.6"
+glutin-winit = { version = "0.3" }
+winit = { version = "0.28.1" }
+raw-window-handle = { version = "0.5.0" }
+gl-rs = { package = "gl", version = "0.14.0" }
+
+# metal-window
+[target.'cfg(target_os = "macos")'.dev-dependencies]
+metal-rs = { package = "metal", version = "0.24.0" }
+winit = "0.28.1"
+objc = "0.2.7"
+cocoa = "0.25.0"
+core-graphics-types = "0.1.1"
+foreign-types-shared = "0.1.1"

@@ -1,9 +1,20 @@
 [package]
 name = "office-kit"
 version = "0.1.0"
+
+
+[workspace.package]
+license = "MIT OR Apache-2.0"
 edition = "2021"
+rust-version = "1.64.0"
+repository = "https://github.com/zhengxiwan/officekit"
+description ="use read/write Open Office Xml format file"
+authors=["https://github.com/zhengxiwan"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [workspace]
+members =["excel-kit","ppt-kit","word-kit"]
 
-members = ["excel-kit", "ppt-kit", "word-kit"]
+[[example]]
+name = "word"
+path = "examples/word.rs"

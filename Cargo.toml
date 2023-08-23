@@ -2,8 +2,8 @@
 name = "office-kit"
 version = "0.1.0"
 
-
 [workspace.package]
+version = "0.1.2"
 license = "MIT OR Apache-2.0"
 edition = "2021"
 rust-version = "1.64.0"

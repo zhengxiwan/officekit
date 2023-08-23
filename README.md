@@ -1,5 +1,5 @@
 # Office kit
-This kit use read/write OOXML format file
+read and write OOXML format file
 
 # Featues
 - [ ] word extract
